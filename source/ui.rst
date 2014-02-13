@@ -216,7 +216,10 @@ Create a instance template that supports SSH Keys.
 
    .. code:: bash
 
-       wget http://downloads.sourceforge.net/project/cloudstack/SSH%20Key%20Gen%20Script/cloud-set-guest-sshkey.in?r=http%3A%2F%2Fsourceforge.net%2Fprojects%2Fcloudstack%2Ffiles%2FSSH%2520Key%2520Gen%2520Script%2F&ts=1331225219&use_mirror=iweb
+       wget http://downloads.sourceforge.net/project/cloudstack/SSH%20Key%20Gen%20Script/
+       cloud-set-guest-sshkey.in?r=
+       http%3A%2F%2Fsourceforge.net%2Fprojects%2Fcloudstack%2Ffiles%2FSSH%2520Key%2520Gen%2520Script%2F&ts=
+       1331225219&use_mirror=iweb
 
 #. 
 
@@ -266,7 +269,8 @@ different, and you will need to use the API keys.
 
    .. code:: bash
 
-       curl --globoff "http://localhost:8096/?command=createSSHKeyPair&name=keypair-doc&account=admin&domainid=5163440e-c44b-42b5-9109-ad75cae8e8a2"
+       curl --globoff "http://localhost:8096/?command=createSSHKeyPair&name=
+       keypair-doc&account=admin&domainid=5163440e-c44b-42b5-9109-ad75cae8e8a2"
 
    The output is something similar to what is given below:
 
@@ -325,7 +329,10 @@ A sample curl command to create a new instance is:
 
 .. code:: bash
 
-    curl --globoff http://localhost:<port number>/?command=deployVirtualMachine\&zoneId=1\&serviceOfferingId=18727021-7556-4110-9322-d625b52e0813\&templateId=e899c18a-ce13-4bbf-98a9-625c5026e0b5\&securitygroupids=ff03f02f-9e3b-48f8-834d-91b822da40c5\&account=admin\&domainid=1\&keypair=keypair-doc
+    curl --globoff http://localhost:<port number>/?command=deployVirtualMachine\&zoneId=1\&serviceOfferingId=
+    18727021-7556-4110-9322-d625b52e0813\&templateId=
+    e899c18a-ce13-4bbf-98a9-625c5026e0b5\&securitygroupids=
+    ff03f02f-9e3b-48f8-834d-91b822da40c5\&account=admin\&domainid=1\&keypair=keypair-doc
 
 Substitute the template, service offering and security group IDs (if you
 are using the security group feature) that are in your cloud
